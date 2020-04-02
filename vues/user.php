@@ -20,6 +20,9 @@ if ($_SESSION) {
 <div id="main" class="container">
     <h2>Mes Posts</h2>
     <div class="table-wrapper">
+
+    <?php if($resultats == true){ ?>
+
         <table class="alt">
             <thead>
             <tr>
@@ -28,8 +31,13 @@ if ($_SESSION) {
                 <th>Catégorie</th>
                 <th>Extrait</th>
                 <th>Date de création</th>
+
+
+                <?php if($ok == true){ ?>
                 <th>Modifier</th>
                 <th>Supprimer</th>
+                <?php } ?>
+                
             </tr>
             </thead>
             <tbody>
@@ -79,6 +87,12 @@ if ($_SESSION) {
 
 
         </table>
+
+    <?php }else{ ?>
+
+        <p>Vous n'avez aucune publications</p>
+
+   <?php } ?>
     </div>
 </div>
 

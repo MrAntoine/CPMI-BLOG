@@ -13,6 +13,9 @@ $resultats = $query->fetchAll(PDO::FETCH_ASSOC);
     <div class="inner">
         <div class="box">
             <div class="content">
+
+            <?php if ($_SESSION) { ?>
+
                 <header class="align-center">
                     <h2>Créer un post</h2>
                 </header>
@@ -36,6 +39,16 @@ $resultats = $query->fetchAll(PDO::FETCH_ASSOC);
                     <label for="fileToUploadPost">Image :</label>
                     <input type='file' name='fileToUploadPost'>
                     <input type='submit' name='writeMsgSubmit' value='Publier' class='postMsg' style="float: right"></form>
+                    
+                    
+                    <?php }else{ ?>
+
+                    <header class="align-center">
+                        <h2>Vous devez être <a href="index.php?action=login">connecté</a> </h2>
+
+                    </header>
+
+                   <?php } ?>
 
             </div>
         </div>

@@ -1,9 +1,5 @@
 
 
-
-
-
-
 <!-- Two -->
 <section id="two" class="wrapper style2">
     <div class="inner">
@@ -20,6 +16,7 @@
                     <input type="text" placeholder="Login" name="login" required>
                     <label for="mdp">Password :</label>
                     <input type="password" placeholder="Password" name="mdp" required>
+                    <div class="g-recaptcha" data-sitekey="6LcdKeYUAAAAANJlf3-1n7TwMAE0owhDuc7NGVg1"></div>
                     <input type="submit" value="Se connecter" style="float: right">
                 </form>
 
@@ -41,6 +38,7 @@
                     <input type="password" required name="mdp" placeholder="Entrez votre mot de passe">
                     <label for="mdp-confirm">Confirm Password :</label>
                     <input type="password" required name="mdp-confirm" placeholder="Confirmez votre mot de passe">
+                    <div class="g-recaptcha" data-sitekey="6LcdKeYUAAAAANJlf3-1n7TwMAE0owhDuc7NGVg1"></div>
                     <input type="submit" name="send" value="S'enregistrer" style="float: right">
                 </form>
 

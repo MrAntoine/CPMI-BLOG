@@ -10,11 +10,12 @@
 
         <li><a href="index.php?action=AddPost">Ajouter un Poste</a></li>
         <li><a href="index.php?action=list">Les publications</a></li>
-        <li><a href="index.php?action=user&id=<?= $_SESSION['id'] ?>">Mes publications</a></li>
+        
         <?php
-        if (isset($_SESSION['id'])) {
-            echo "<li><a href='index.php?action=deconnexion'>Deconnexion</a></li>";
-        } else {
+        if (isset($_SESSION['id'])) { ?>
+            <li><a href="index.php?action=user&id=<?= $_SESSION['id'] ?>">Mes publications</a></li>
+            <li><a href='index.php?action=deconnexion'>Deconnexion</a></li>         
+       <?php } else {
             echo "<li><a href='index.php?action=login'>Connexion</a></li>";
         }
         ?>

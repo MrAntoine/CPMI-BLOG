@@ -13,6 +13,28 @@ function FakeConnexion (){
     // $_SESSION["login"] = "gilles";
 }
 
+function CheckCaptcha($userResponse) {
+    $fields_string = '';
+    $fields = array(
+        'secret' => '6LcdKeYUAAAAAIp6Q-HH_oL3vKXfgS-pZkcwUfNa',
+        'response' => $userResponse
+    );
+    foreach($fields as $key=>$value)
+    $fields_string .= $key . '=' . $value . '&';
+    $fields_string = rtrim($fields_string, '&');
+
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, 'https://www.google.com/recaptcha/api/siteverify');
+    curl_setopt($ch, CURLOPT_POST, count($fields));
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $fields_string);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, True);
+
+    $res = curl_exec($ch);
+    curl_close($ch);
+
+    return json_decode($res, true);
+}
+
 
 function getUser($id) {
     global $pdo;

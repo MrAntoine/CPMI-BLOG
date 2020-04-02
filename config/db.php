@@ -10,7 +10,7 @@ $db="CPMI-blog"; // le nom de votre base de données.
 $user="root"; // nom d utilisateur pour se connecter
 // A l iut prenom.nom
 
-$passwd="root"; //
+$passwd=""; //
 // A l iut, généré automatiquement
 
 try {

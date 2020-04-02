@@ -17,6 +17,9 @@ ob_start(); // Je démarre le buffer de sortie : les données à afficher sont s
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main.css" />
 
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    
    <!--  <link href="./css/style.css" rel="stylesheet"> -->
 
 </head>
