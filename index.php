@@ -40,7 +40,7 @@ if (isset($_SESSION['info'])) {
 
 
 <header id="header" class="alt">
-    <div class="logo"><a href="index.php?action=list">CPMI - Blog <span>by Antoine Vanderbrecht</span></a></div>
+    <div class="logo"><a href="index.php?action=list">CPMI - Blog <span>by Antoine & Elise</span></a></div>
     <a href="#menu">Menu</a>
 </header>
 
@@ -83,7 +83,7 @@ if (isset($_SESSION['info'])) {
 <footer id="footer">
     <div class="container">
         <ul class="icons">
-            <li><a target="_blank" href="https://antoinevanderbrecht.fr/"><span class="label">VANDERBRECHT Antoine</span></a></li>
+            <li><a target="_blank" href="https://antoinevanderbrecht.fr/"><span class="label">VANDERBRECHT Antoine</span></a><a target="_blank" href="https://elisehochin.fr/"><span class="label">HOCHIN Elise</span></a></li>
         </ul>
     </div>
     <div class="copyright">
